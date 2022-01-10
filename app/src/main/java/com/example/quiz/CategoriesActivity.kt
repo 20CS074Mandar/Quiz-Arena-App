@@ -31,6 +31,4 @@ class CategoriesActivity : AppCompatActivity() {
         binding.categoriesRv.setHasFixedSize(true)
     }
 
-
-
 }
