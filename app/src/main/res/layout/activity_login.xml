@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/login_button"
+        android:fontFamily="@font/montserrat_alternates"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/login_button"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEt"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <TextView
+        android:id="@+id/fgt_psswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noto_sans"
+        android:text="Forgot Password?"
+        android:textColor="@color/login_blue2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:padding="10sp"
+        android:layout_marginStart="32sp"
+        android:layout_marginEnd="32sp"
+        android:textSize="20sp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/username_icon"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:fontFamily="@font/noto_sans"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/passwrodEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10sp"
+        android:layout_marginStart="32sp"
+        android:layout_marginEnd="32sp"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/password_icon"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:fontFamily="@font/noto_sans"
+        android:hint="Passwrod"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32sp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:padding="10sp"
+        android:text="Welcome \nBack"
+        android:textColor="@color/blue_4"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fgt_psswd"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't Have an Account? "
+            android:textColor="@color/login_blue2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10sp"
+            android:fontFamily="@font/noto_sans"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:textSize="20sp"
+            android:textColor="@color/login_blue1"
+            android:layout_marginStart="15sp"
+            android:id="@+id/signupTv"
+            android:textStyle="bold"
+            android:fontFamily="@font/noto_sans"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

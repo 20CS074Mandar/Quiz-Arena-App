@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quiz Arena</string>
+    //Categories name
+    <string name="c_sharp">C Sharp</string>
+    <string name="c">C</string>
+    <string name="cpp">Cpp</string>
+    <string name="name_Java">Java</string>
+</resources>
